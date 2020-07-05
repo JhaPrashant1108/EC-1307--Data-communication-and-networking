@@ -49,13 +49,17 @@ This is used to imitate some remote server and client is used to imitate a clien
      this will download team_members file in /FTP/client/downloads with name "downloadedFile.json" 
 
 ### For SMTP Server:
-    Again run two different ionstances of command prompt and run server in one of them
-    Now if you want to send mail from your gmail account run following command
-        python client.py your_mail_id your_password recepients_mail_id subject_of_mail body_of_mail
-        For this to work make sure to enable "Access for less secure apps" on your google account
-    Or you can send mail to our custom server by following command
-        python client.py your_mail_id recepients_mail_id subject_of_mail body_of_mail
-        and you will be able to see recieved mail in command prompt where server is running
+*Run two different instances of command prompt*
+- In one of them run
+
+    > python SMTP/server.py
+    
+- In other one Execute the following Command
+
+
+    Example
+    
+   > python SMTP/client.py "sender@text.com" "reciever@test.com" "TEXT" "THIS IS A DUMMY TEXT"
 
 ### For SNTP Server
 *Simply run following command*
