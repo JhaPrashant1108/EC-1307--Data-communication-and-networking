@@ -1,9 +1,10 @@
-# EC-1307--Data-communication-and-networking
+# EC-1307-Data-communication-and-networking
 
-Use latest version of python 3
-install pyftpdlib module by pip install pyftpdlib
-install dnspython by pip install git+https://github.com/rthalley/dnspython
+##Lets run the code first:
+-Install all dependencies:
+pip install -r requirements.txt
 
+##Running Different part of code
 For HTTP Server
     Go to "HTTP Server" directory in command prompt (cd "HTTP Server")
     run main.py (python main.py)
