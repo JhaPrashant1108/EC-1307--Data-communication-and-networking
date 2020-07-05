@@ -70,6 +70,27 @@ This is used to imitate some remote server and client is used to imitate a clien
 
 It will return synchronized time
 
+### For SNMP
+First Enable the device to follow SNMP protocols, then
+*Simply run the following command*
+
+If on a public network run
+        
+        python SNMP/main.py 
+        
+   Example
+   
+   > python SNMP/main.py 
+
+
+If on a password protected network run
+        
+        python SNMP/main.py "password"
+        
+   Example
+   
+   > python SNMP/main.py "THIS IS A DUMMY PASSWORD"
+
 
 ### For DNS
 *Run following command*
