@@ -1,36 +1,28 @@
-from pysnmp.entity.rfc3413.oneliner import cmdgen
-import time
-import matplotlib.pyplot as plt
+from pysnmp import hlapi
+import sys
+from quicksnmp import *
 
-cmdGen = cmdgen.CommandGenerator()
+arg = sys.argv
+Password = ''
+if len(arg)==2:
+  Password = arg[1]
+  
 
-snmp_community = cmdgen.CommunityData('public')
-snmp_ip =  cmdgen.UdpTransportTarget(('10.10.88.110', 161))
-snmp_oids = [".1.3.6.1.4.1.9.2.2.1.1.6.3",".1.3.6.1.4.1.9.2.2.1.1.8.3"]
+# Using SNMPv2c, we set the hostname of the remote device to 'SNMPHost'
+set('10.0.0.1', {'1.3.6.1.2.1.1.5.0': 'SNMPHost'}, hlapi.CommunityData(Password))
 
-slots = 0
-input_rates = []
-output_rates = []
-while slots <= 50:
-    errorIndication, errorStatus, errorIndex, varBinds = cmdGen.getCmd(snmp_community, snmp_ip, *snmp_oids)
-    print(varBinds)
-    input_rate = str(varBinds[0]).split("=")[1].strip()
-    output_rate = str(varBinds[1]).split("=")[1].strip()
+# Using SNMPv2c, we retrieve the hostname of the remote device
+print(get('10.0.0.1', ['1.3.6.1.2.1.1.5.0'], hlapi.CommunityData(Password)))
 
-    input_rates.append(input_rate)
-    output_rates.append(output_rate)
+its = get_bulk_auto('10.0.0.1', [
+    '1.3.6.1.2.1.2.2.1.2 ',
+    '1.3.6.1.2.1.31.1.1.1.18'
+    ], hlapi.CommunityData(Password), '1.3.6.1.2.1.2.1.0')
+# We print the results in format OID=value
+for it in its:
+    for k, v in it.items():
+        print("{0}={1}".format(k, v))
+    # We leave a blank line between the output of each interface
+    print('')
 
-    time.sleep(6)
-    slots = slots + 1
-    print(slots)
 
-time_range = range(0, slots)
-
-print(input_rates)
-print(output_rates)
-# plt.figure()
-plt.plot(time_range, input_rates, label="input rate")
-plt.plot(time_range, output_rates, label="output rate")
-plt.xlabel("time slot")
-plt.ylabel("Traffic Measured in bps")
-plt.title("Interface gig0/0/2 Traffic")
