@@ -72,6 +72,7 @@ It will return synchronized time
 
 ### For SNMP
 First Enable the device to follow SNMP protocols, then
+
 *Simply run the following command*
 
 If on a public network run
