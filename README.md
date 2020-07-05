@@ -60,7 +60,7 @@ This is used to imitate some remote server and client is used to imitate a clien
 ### For SNTP Server
 *Simply run following command*
 
-        > python SNTP/main.py        
+   > python SNTP/main.py        
 
 It will return synchronized time
 
