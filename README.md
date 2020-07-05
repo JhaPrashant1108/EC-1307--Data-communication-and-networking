@@ -20,21 +20,30 @@ Go to any of your browser and type url http://localhost:3000/{filename} where fi
 
 ###### For FTP Server
 This is used to imitate some remote server and client is used to imitate a client system
+
 **Run two different instances of command prompt**
 - In one of them run
 
     > python FTP/server/server.py
 
-- In other one move to client directory and execute command in following manner
-        python client.py "path of file to be uploaded relative to client" "path where file has to be uploaded relative to server" u
+- In other one execute command in following manner 
+        
+        python FTP/client/client.py "path of file to be uploaded relative to client" "path where file has to be uploaded relative to server" u
         this will upload the file from client to server
+    Example
+        
+    > python FTP/client/client.py ./JSON_data/team_members.json ./FTP/server/uploads/uploadedFile.json u
+    
+    this will upload team_members file in /FTP/server/uploads with name "uploadedFile.json"
 
-        python client.py "path of file to be downloaded" "path where file has to be downloaded" d
+        python FTP/client/client.py "path of file to be downloaded" "path where file has to be downloaded" d
         this will download file from server to client
     
     Example
-        python client.py ./uploads/pet_names ./new_file d
-        this will download pet_names file in /server/uploads with name "new_file" to client
+        
+    > python FTP/client/client.py ./JSON_data/team_members.json ./FTP/client/downloads/downloadedFile.json d
+    
+     this will download team_members file in /FTP/client/downloads with name "downloadedFile.json" 
 
 ###### For SMTP Server:
     Again run two different ionstances of command prompt and run server in one of them
