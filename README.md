@@ -18,7 +18,7 @@ Go to any of your browser and type url http://localhost:3000/{filename} where fi
     
     Ex. http://localhost:3000/team_members.json
 
-###### For FTP Server
+### For FTP Server
 This is used to imitate some remote server and client is used to imitate a client system
 
 **Run two different instances of command prompt**
@@ -48,7 +48,7 @@ This is used to imitate some remote server and client is used to imitate a clien
     
      this will download team_members file in /FTP/client/downloads with name "downloadedFile.json" 
 
-###### For SMTP Server:
+### For SMTP Server:
     Again run two different ionstances of command prompt and run server in one of them
     Now if you want to send mail from your gmail account run following command
         python client.py your_mail_id your_password recepients_mail_id subject_of_mail body_of_mail
@@ -57,12 +57,13 @@ This is used to imitate some remote server and client is used to imitate a clien
         python client.py your_mail_id recepients_mail_id subject_of_mail body_of_mail
         and you will be able to see recieved mail in command prompt where server is running
 
-###### For SNTP Server
+### For SNTP Server
     Simply run client.py and it will return synchronized time
  10:44 05-07-2020
 
-###### For DNS
-    run following command
-    python main.py websitename
+### For DNS
+**Run following command**
+    
+    > python DNS/main.py websitename
     website name can be the url of any website
 
