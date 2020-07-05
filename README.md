@@ -10,7 +10,7 @@
 Open Command prompt or terminal in the Parent Directory 
 
 ### For HTTP Server
-**Run the file using the following command**
+*Run the file using the following command*
 
     python HTTP_server/main.py
     
@@ -21,7 +21,7 @@ Go to any of your browser and type url http://localhost:3000/{filename} where fi
 ### For FTP Server
 This is used to imitate some remote server and client is used to imitate a client system
 
-**Run two different instances of command prompt**
+*Run two different instances of command prompt*
 - In one of them run
 
     > python FTP/server/server.py
@@ -33,7 +33,7 @@ This is used to imitate some remote server and client is used to imitate a clien
         this will upload the file from client to server
     Example
         
-    > python FTP/client/client.py ./JSON_data/team_members.json ./FTP/server/uploads/uploadedFile.json u
+    > python FTP/client/client.py "./JSON_data/team_members.json" "./FTP/server/uploads/uploadedFile.json" u
     
     this will upload team_members file in /FTP/server/uploads with name "uploadedFile.json"
    
@@ -44,7 +44,7 @@ This is used to imitate some remote server and client is used to imitate a clien
     
     Example
         
-    > python FTP/client/client.py ./JSON_data/team_members.json ./FTP/client/downloads/downloadedFile.json d
+    > python FTP/client/client.py "./JSON_data/team_members.json" "./FTP/client/downloads/downloadedFile.json" d
     
      this will download team_members file in /FTP/client/downloads with name "downloadedFile.json" 
 
@@ -62,8 +62,11 @@ This is used to imitate some remote server and client is used to imitate a clien
  10:44 05-07-2020
 
 ### For DNS
-**Run following command**
+*Run following command*
     
-    > python DNS/main.py websitename
+    python DNS/main.py "websitename"
     website name can be the url of any website
-
+  
+   Example
+   
+   > python DNS/main.py "www.youtube.com"
