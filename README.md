@@ -1,7 +1,7 @@
 # EC-1307-Data-communication-and-networking
 
 ## Lets run the code first:
--Install all dependencies:
+- Install all dependencies:
 > pip install -r requirements.txt
 
 ## Running Different part of code
