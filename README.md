@@ -55,7 +55,9 @@ This is used to imitate some remote server and client is used to imitate a clien
     > python SMTP/server.py
     
 - In other one Execute the following Command
-
+    
+        python client.py your_mail_id recepients_mail_id subject_of_mail body_of_mail
+        this will send message from one end to another
 
     Example
     
