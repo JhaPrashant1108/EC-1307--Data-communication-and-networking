@@ -6,9 +6,15 @@
     > pip install -r requirements.txt
 
 ## Running Different part of code
+
+Open Command prompt or terminal in the Parent Directory 
+
 ###### For HTTP Server
-    Go to "HTTP Server" directory in command prompt (cd "HTTP Server")
-    run main.py (python main.py)
+run the file using the following command 
+
+    > python HTTP_server/main.py
+    
+    
     Go to any of your browser and type url "http://localhost:3000/{filename}" where filename is the name of json file inside "JSON_data" directory for which you want to perform the GET request
 
     Ex. python server.py
