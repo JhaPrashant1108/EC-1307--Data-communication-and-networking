@@ -27,6 +27,7 @@ This is used to imitate some remote server and client is used to imitate a clien
     > python FTP/server/server.py
 
 - In other one execute command in following manner 
+  - For uploading
         
         python FTP/client/client.py "path of file to be uploaded relative to client" "path where file has to be uploaded relative to server" u
         this will upload the file from client to server
@@ -35,7 +36,8 @@ This is used to imitate some remote server and client is used to imitate a clien
     > python FTP/client/client.py ./JSON_data/team_members.json ./FTP/server/uploads/uploadedFile.json u
     
     this will upload team_members file in /FTP/server/uploads with name "uploadedFile.json"
-
+   
+  - For Downloading
         python FTP/client/client.py "path of file to be downloaded" "path where file has to be downloaded" d
         this will download file from server to client
     
