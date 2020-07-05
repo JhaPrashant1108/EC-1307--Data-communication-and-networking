@@ -13,6 +13,8 @@ Open Command prompt or terminal in the Parent Directory
 run the file using the following command 
 
     > python HTTP_server/main.py
+    
+    
     Go to any of your browser and type url "http://localhost:3000/{filename}" where filename is the name of json file inside "JSON_data" directory for which you want to perform the GET request
 
     Ex. python server.py
