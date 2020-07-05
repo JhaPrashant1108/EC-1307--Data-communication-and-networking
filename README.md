@@ -11,7 +11,8 @@ Open Command prompt or terminal in the Parent Directory
 
 ###### For HTTP Server
 run the file using the following command 
-    > python HTTP_server/main.py
+
+    python HTTP_server/main.py
 
 ###### For FTP Server
     The directory is used to imitate some remote server and client is used to imitate a client system
