@@ -1,10 +1,10 @@
 # EC-1307-Data-communication-and-networking
 
-#Lets run the code first:
+## Lets run the code first:
 -Install all dependencies:
 pip install -r requirements.txt
 
-#Running Different part of code
+## Running Different part of code
 For HTTP Server
     Go to "HTTP Server" directory in command prompt (cd "HTTP Server")
     run main.py (python main.py)
