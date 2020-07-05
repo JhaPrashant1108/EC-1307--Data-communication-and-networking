@@ -1,0 +1,18 @@
+{
+    "member1" : {
+        "name" : "Roshan Thakur",
+        "scholarID" : 1714116
+    },
+    "member2" : {
+        "name" : "Varchasva Bharadwaj",
+        "scholarID" : 1714117
+    },
+    "member3" : {
+        "name" : "Saransh Kumar",
+        "scholarID" : 1714118
+    },
+    "member4" : {
+        "name" : "Prashant Jha",
+        "scholarID" : 1714116
+    }
+}
