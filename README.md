@@ -38,6 +38,7 @@ This is used to imitate some remote server and client is used to imitate a clien
     this will upload team_members file in /FTP/server/uploads with name "uploadedFile.json"
    
   - For Downloading
+  
         python FTP/client/client.py "path of file to be downloaded" "path where file has to be downloaded" d
         this will download file from server to client
     
