@@ -21,7 +21,10 @@ Go to any of your browser and type url http://localhost:3000/{filename} where fi
 ###### For FTP Server
 This is used to imitate some remote server and client is used to imitate a client system
 - Run two different instances of command prompt
-- In one of them move to the server directory and run "python server.py"
+- In one of them run
+
+    python FTP/server/server.py
+
 - In other one move to client directory and execute command in following manner
         python client.py "path of file to be uploaded relative to client" "path where file has to be uploaded relative to server" u
         this will upload the file from client to server
