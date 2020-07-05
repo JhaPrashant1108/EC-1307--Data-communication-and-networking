@@ -58,8 +58,11 @@ This is used to imitate some remote server and client is used to imitate a clien
         and you will be able to see recieved mail in command prompt where server is running
 
 ### For SNTP Server
-    Simply run client.py and it will return synchronized time
- 10:44 05-07-2020
+*Simply run following command*
+        > python SNTP/main.py        
+
+It will return synchronized time
+
 
 ### For DNS
 *Run following command*
