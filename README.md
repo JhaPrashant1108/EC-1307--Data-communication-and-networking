@@ -9,7 +9,7 @@
 
 Open Command prompt or terminal in the Parent Directory 
 
-###### For HTTP Server
+### For HTTP Server
 **Run the file using the following command**
 
     python HTTP_server/main.py
