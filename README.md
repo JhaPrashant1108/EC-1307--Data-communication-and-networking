@@ -6,6 +6,9 @@
     > pip install -r requirements.txt
 
 ## Running Different part of code
+
+Open Command prompt or terminal in the Parent Directory 
+
 ###### For HTTP Server
     Go to "HTTP Server" directory in command prompt (cd "HTTP Server")
     run main.py (python main.py)
