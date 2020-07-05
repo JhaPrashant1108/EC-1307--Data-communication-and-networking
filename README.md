@@ -2,6 +2,7 @@
 
 ## Lets run the code first:
 - Install all dependencies:
+    
     pip install -r requirements.txt
 
 ## Running Different part of code
