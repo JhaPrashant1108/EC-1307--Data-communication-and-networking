@@ -40,6 +40,7 @@ For SMTP Server:
 For SNTP Server
     Simply run client.py and it will return synchronized time
  10:44 05-07-2020
+
 For DNS
     run following command
     python main.py websitename
